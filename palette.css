@@ -1,0 +1,11 @@
+/* Requested Adobe Color palette. Original animation timelines are retained. */
+:root{--magenta:#DC1EFE;--violet:#7030F1;--deep-purple:#4D2999;--ink:#0B0721;--paper:#FFFEFE;--beige:var(--paper);--beige-dark:var(--paper);--blue:var(--violet);--navy:var(--ink)}
+#intro-vid{filter:hue-rotate(35deg) saturate(1.08)}
+::selection{background:var(--magenta);color:var(--paper)}
+.text-white{color:var(--paper)}.bg-white{background-color:var(--paper)}
+.text-black{color:var(--ink)}.bg-black{background-color:var(--ink)}
+#hero-quote-block .bg-\[\#7030F1\]{background:var(--magenta)}
+@media(max-width:767px){
+  #main-nav{max-width:calc(100vw - 16px);width:max-content}
+  #main-nav .nav-item{padding-left:6px;padding-right:6px;font-size:12px;white-space:nowrap}
+}

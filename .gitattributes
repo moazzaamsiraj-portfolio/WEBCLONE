@@ -3,6 +3,7 @@
 *.PNG binary
 *.jpg binary
 *.jpeg binary
+*.svg binary
 *.mp4 binary
 *.woff binary
 *.ttf binary

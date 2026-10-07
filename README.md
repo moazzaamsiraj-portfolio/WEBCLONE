@@ -24,23 +24,21 @@ The original intro sequence, hero video, cursor interactions, sound toggle, scro
 
 Media, fonts, animation libraries, icons, and compiled styles are stored locally. Artwork and photographs retain their original colors; the hero video is tinted with a CSS filter. Website surfaces, typography, accents, borders, and motion colors use the new palette.
 
-`index.html` contains the page and original animation logic. `palette.css` contains the palette variables and final overrides. `utilities.css` contains the compiled layout styles. `vendor/` and `fonts/` contain local dependencies.
+`index.html` contains the page and original animation logic. Palette and layout styles live in `css/`. Legal pages live in `pages/`. Images and video live in `assets/`. `vendor/` and `fonts/` contain local dependencies.
 
 The reference website's deployment-specific analytics and Cloudflare challenge scripts are excluded. The icon dependency was repaired and sound/navigation buttons have accessible labels.
 
 ## Project structure
 
 ```text
-index.html        Complete page, inline CSS and animation JavaScript
-palette.css       Color palette and responsive navigation overrides
-utilities.css     Precompiled utility styles
-privacy.html      Original privacy page with the new palette
-terms.html        Original terms page with the new palette
-vendor/           Local animation and icon libraries
-fonts/            Local fonts and font-face stylesheets
-*.png, *.jpg, ...  Original gallery and case-study assets
-*.mp4             Original hero video
-.nojekyll         Enables ordinary static assets on GitHub Pages
+index.html              Home page (inline CSS and animation JavaScript)
+css/                    Palette and precompiled layout styles
+pages/                  Privacy and terms pages
+assets/images/          Gallery, logos, and case-study artwork
+assets/video/           Hero video
+vendor/                 Local animation and icon libraries
+fonts/                  Local fonts and font-face stylesheets
+.nojekyll               Enables ordinary static assets on GitHub Pages
 ```
 
 No installation, build step, API key, or environment variables are required. The JavaScript for the interactions is fully included in `index.html`; it is not a remote embed of the reference website.
